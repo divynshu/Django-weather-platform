@@ -5,7 +5,7 @@ from .forms import CityForm
 
 
 def index(request):
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=c354f9a6b866f5f3d96eacffc0f9dd94'
+    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=YOUR API'
     cities=City.objects.all() #return all the cities in the database
     
     if request.method == 'POST': # only true if form is submitted
